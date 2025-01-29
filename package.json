@@ -1,0 +1,19 @@
+{
+  "name": "raver-tui",
+  "module": "index.ts",
+  "type": "module",
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/color-convert": "^2.0.4",
+    "@types/react": "^19.0.8"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "audio-decode": "^2.2.2",
+    "color-convert": "^2.0.1",
+    "ink": "^5.1.0",
+    "react": "18"
+  }
+}
