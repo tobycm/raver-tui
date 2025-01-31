@@ -1,15 +1,13 @@
-import { Box, Text } from "ink";
-import ScreenInfo from "./components/screenInfo";
+import Visualizer from "./components/visualizer";
+import { AudioProvider } from "./contexts/AudioContext";
 import { ScreenProvider } from "./contexts/ScreenContext";
 
 export default function App() {
   return (
-    <ScreenProvider>
-      <Box flexDirection="column">
-        <Text>xd</Text>
-
-        <ScreenInfo marginTop={1} />
-      </Box>
-    </ScreenProvider>
+    <AudioProvider>
+      <ScreenProvider>
+        <Visualizer />
+      </ScreenProvider>
+    </AudioProvider>
   );
 }
